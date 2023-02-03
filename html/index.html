@@ -8,14 +8,17 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" href="/src/css/index.css">
     <script src="https://kit.fontawesome.com/14b869a0ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 <body>
-<header class="carousel1">
-    <nav>
-        <div class="navbar">
-            <div class="nav__coffee">
-                <a href="/html/index.html">Coffee In Baku</a>
-            </div>
+<header>
+    <div class="carousel1">
+        <nav>
+            <div class="navbar">
+                <div class="nav__coffee">
+                    <a href="/html/index.html">Coffee In Baku</a>
+                </div>
             <div class="nav__middle">
                 <div class="nav__items">
                     <div class="nav__item">
@@ -31,14 +34,11 @@
                         <a href="">Menu</a>
                     </div>
                     <div class="nav__item pages">
-                        <a href="">Pages <i class="fa-solid fa-sort-down page_icon"></i></a>
-                        <div class="drop">
-                            <h3>menu</h3>
-                            <h3>Information</h3>
-
+                        <p class="pages">Pages <i class="fa-solid fa-sort-down page_icon"></i></p>
+                        <div class="dropdown__menu">
+                            <a href="">Reservation</a>
+                            <a href="">Testimonial</a>
                         </div>
-                        
-
                     </div>
                     <div class="nav__item">
                         <a href="">Contact</a>
@@ -47,12 +47,31 @@
             </div>
         </div>
     </nav>
-    <div class="">
-        <h4>We Have Been Serving</h4>
-        <h3>COFFEE</h3>
-        <h4>* SINCE 1950 *</h4>
+    <div class="header__text">
+        <h4 class="serving">We Have Been Serving</h4>
+        <h3 class="coffee">COFFEE</h3>
+        <h4 class="since">* SINCE 1950 *</h4>
     </div>
+    <div class="overlay__bottom"></div>
+    
+    
+    
+</div>
 </header>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+    </div>
+
+
+
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
 
 
 
@@ -74,5 +93,18 @@
 
 
     <script src='main.js'></script>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 </html>
