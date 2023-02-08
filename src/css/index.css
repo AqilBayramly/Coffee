@@ -24,6 +24,24 @@
     left: 0;    
     opacity: 0.9;
 }
+.carousel2{
+    background-image: url(/src/img/carousel-2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    vertical-align: middle;
+}
+.carousel2::before{
+    content: '';
+    position: absolute;
+    background: rgba(51,33,29,0.7);    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    opacity: 0.9;
+}
 .navbar{
     display: flex;
     max-width: 1300px;
